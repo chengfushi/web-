@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            width: 1300px;
+            height: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .info {
+            flex: 1;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .info h1 {
+            grid-column: 1 / -1;
+        }
+
+        .info p {
+            margin: 0;
+            color: #666;
+        }
+
+        .photo {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 4px solid #fff;
+            /* 添加边框 */
+            border-radius: 8px;
+            /* 可选：添加边框圆角 */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            /* 添加阴影效果 */
+        }
+
+
+        .photo img {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay:hover {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .overlay-content p {
+            margin: 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>个人简介</h1>
+            <p><strong>姓名：</strong>施成福</p>
+            <p><strong>性别：</strong>男</p>
+            <p><strong>年龄：</strong>17岁</p>
+            <p><strong>兴趣爱好：</strong>听歌、旅行</p>
+            <p>你好，我是施成福，来自中南民族大学。我热爱旅行，并且对音乐有着浓厚的兴趣。在业余时间，我喜欢旅行、听音乐、写博客。我的目标是挣他一个小目标，并不断努力朝着这个目标前进。
+            </p>
+            <p><strong>csdn地址：</strong><a href="https://blog.csdn.net/2303_82176667?spm=1000.2115.3001.5343"
+                    target="_blank" style="text-decoration: none">我的CSDN博客</a>
+            </p>
+            <p><strong>邮箱地址：</strong><a href="mailto:你的邮箱地址" target="_blank"
+                    style="text-decoration: none">shichengfu123@outlook.com</a></p>
+            <p><strong>gitee地址：</strong><a href="https://gitee.com/shi-chengfu" target="_blank"
+                    style="text-decoration: none">我的gitee仓库</a></p>
+        </div>
+        <div class="photo">
+            <img src="image/myphoto.jpg" alt="Your Photo" width="300" height="300">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <p>我的照片</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
