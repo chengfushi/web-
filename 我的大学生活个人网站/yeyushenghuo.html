@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的课余生活</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            /* 浅色背景 */
+        }
+
+        header {
+            background-color: #f3f3f3;
+            /* 浅灰色背景 */
+            color: #333;
+            /* 深灰色文字 */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+            /* 深灰色文字 */
+        }
+
+        .activity {
+            background-color: #fff;
+            /* 白色背景 */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .activity h2 {
+            color: #333;
+            /* 深灰色文字 */
+        }
+
+        footer {
+            background-color: #f3f3f3;
+            /* 浅灰色背景 */
+            color: #666;
+            /* 深灰色文字 */
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* 九宫格相册样式 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .grid img:hover {
+            transform: scale(1.1);
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            /* 初始状态下将图片边框设置为矩形 */
+            overflow: hidden;
+            /* 隐藏图片溢出的部分 */
+            transition: border-radius 0.3s ease;
+            /* 添加过渡效果 */
+        }
+
+        /* 当鼠标悬停时，将图片边框半径调整为50%，使其变为圆形 */
+        .grid img:hover {
+            border-radius: 50%;
+        }
+
+        /* 添加自定义样式 */
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-family: 'ZCOOL KuaiLe', cursive;
+            /* 使用Google Fonts中的字体 */
+            font-size: 45px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>我的课余生活</h1>
+    </header>
+
+    <div class="container">
+        <div class="activity">
+            <h2>读书</h2>
+            <p>在我课余的宁静时光里，我总是迷恋着书籍的世界。翻开一页，我仿佛穿越了时光的长河，置身于各种不同的故事情节之中。小说中的人物在我眼前跃然而出，历史书籍则带我穿越到古老的文明中，科普作品则拓展了我的视野，让我对世界有了更深入的理解。阅读不仅仅是获取知识的方式，更是一种心灵的放松和沉浸。在书的海洋里徜徉，我忘却了周围的喧嚣，沉浸在文字的世界里，与作者进行着一场无声的对话。每一本书都是一扇通向未知世界的门，每一次阅读都是一次心灵的冒险。在书籍的陪伴下，我感受到了知识的力量，也发现了阅读带来的无限乐趣。
+            </p>
+        </div>
+
+        <div class="activity">
+            <h2>旅行</h2>
+            <p>当我和室友一起前往各种各样的地方旅行时，每一次的经历都是独一无二的。我们探索着新的地方，品尝当地的美食，体验不同文化带来的魅力。在旅途中，我们会遇到各种有趣的人和事，留下一段段难忘的回忆。无论是漫步在古老的街道上，还是欣赏壮丽的自然风光，每一次旅行都让我们更加深刻地体会到世界的多样性和美好。与室友一起分享这些珍贵的时刻，不仅增进了我们之间的友谊，也让我们更加热爱生活的每一个角落。
+            </p>
+        </div>
+
+        <div class="activity">
+            <h2>板绘</h2>
+            <p>我喜欢用绘画来表达自己的情感和想法。每当我拿起画笔，开始在平板上创作时，仿佛进入了一个完全属于我的领域。绘画不仅是我表达情感和思想的方式，更是我与自己内心对话的桥梁。在创作的过程中，我可以尽情地释放内心的情感，探索无限的想象空间，享受着创作的乐趣和满足感。每一幅作品都是我心灵的倾诉，是我独特的艺术语言，它们承载着我对生活的热爱和对美好的追求。绘画让我感受到自由与创造力的魅力，成为我生活中不可或缺的一部分。
+            </p>
+        </div>
+
+        <!-- 九宫格相册 -->
+        <div class="grid">
+            <img src="image/yeyu7.png" alt="Image 1">
+            <img src="image/yeyu8.png" alt="Image 2">
+            <img src="image/yeyu9.png" alt="Image 3">
+            <img src="image/yeyu4.png" alt="Image 4">
+            <img src="image/yeyu5.png" alt="Image 5">
+            <img src="image/yeyu6.png" alt="Image 6">
+            <img src="image/yeyu1.png" alt="Image 7">
+            <img src="image/yeyu2.png" alt="Image 8">
+            <img src="image/yeyu3.png" alt="Image 9">
+        </div>
+    </div>
+    <div class="footer">
+        我的课余生活
+    </div>
+</body>
+
+</html>
