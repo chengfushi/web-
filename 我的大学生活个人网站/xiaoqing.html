@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .guestbook-container {
+            width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .guestbook {
+            height: 400px;
+            /* Increase height of guestbook */
+            border: 1px solid #ccc;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .guestbook h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .message p {
+            margin: 0;
+        }
+
+        .message .name {
+            font-weight: bold;
+        }
+
+        .message .timestamp {
+            font-size: 0.8em;
+            color: #888;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: calc(100% - 20px);
+            /* 20px for padding */
+            max-width: 1300px;
+            /* Limit width to 1300px */
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group button {
+            padding: 8px 15px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="guestbook-container">
+        <div class="form">
+            <h2>给民大留言</h2>
+            <div class="form-group">
+                <label for="name">姓名:</label> <!-- 修改为姓名 -->
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="message">留言:</label> <!-- 修改为留言 -->
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submitBtn">提交</button> <!-- 修改为提交 -->
+            </div>
+        </div>
+
+        <div class="guestbook">
+            <h2>留言展示区</h2> <!-- 修改为留言展示区 -->
+            <!-- Messages will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var submitBtn = document.getElementById('submitBtn');
+            submitBtn.addEventListener('click', function () {
+                var name = document.getElementById('name').value;
+                var message = document.getElementById('message').value;
+                var timestamp = new Date().toLocaleString();
+
+                if (name && message) {
+                    var guestbook = document.querySelector('.guestbook');
+                    var newMessage = document.createElement('div');
+                    newMessage.classList.add('message');
+                    newMessage.innerHTML = `
+                    <p class="name">${name}</p>
+                    <p>${message}</p>
+                    <p class="timestamp">${timestamp}</p>
+                `;
+                    guestbook.appendChild(newMessage);
+
+                    // Clear input fields
+                    document.getElementById('name').value = '';
+                    document.getElementById('message').value = '';
+                } else {
+                    alert('请填写姓名和留言。'); <!-- 修改为中文提示 -->
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
