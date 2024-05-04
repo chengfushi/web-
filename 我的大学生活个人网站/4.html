@@ -1,93 +1,251 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/1.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/1.dwt" codeOutsideHTMLIsLocked="false" -->
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>无标题文档</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
-<style type="text/css">
-#top {
-	margin: auto;
-	height: 70px;
-	width: 1300px;
-}
-#daohang1 {
-}
-#daohang1 {
-	float: left;
-	height: 70px;
-	width: 220px;
-}
-#daohang2 {
-	float: right;
-	height: 70px;
-	width: 1080px;
-}
-#daohang {
-	float: right;
-	height: 70px;
-	width: 1080px;
-}
-#main1 {
-	margin: auto;
-	height: 300px;
-	width: 1300px;
-}
-#main2 {
-	margin: auto;
-	height: 700px;
-	width: 1300px;
-}
-#down {
-	margin: auto;
-	height: 120px;
-	width: 1300px;
-}
-#daohanglan {
-	float: right;
-	height: 70px;
-	width: 1080px;
-}
-</style>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>无标题文档</title>
+	<!-- InstanceEndEditable -->
+	<!-- InstanceBeginEditable name="head" -->
+	<style type="text/css">
+		#down2 {
+			background-image: url(image/down.png);
+			margin: auto;
+			height: 300px;
+			width: 1300px;
+		}
+	</style>
+	<!-- InstanceEndEditable -->
+	<style type="text/css">
+		#top {
+			margin: auto;
+			height: 70px;
+			width: 1300px;
+		}
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+		#daohang1 {}
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
+		#daohang1 {
+			float: left;
+			height: 70px;
+			width: 220px;
+		}
+
+		#daohang2 {
+			float: right;
+			height: 70px;
+			width: 1080px;
+		}
+
+		#daohang {
+			float: right;
+			height: 70px;
+			width: 1080px;
+		}
+
+		#main1 {
+			margin: auto;
+			height: 10px;
+			width: 1300px;
+		}
+
+		#main2 {
+			margin: auto;
+			height: 300px;
+			width: 1300px;
+		}
+
+		#down {
+			margin: auto;
+			height: 120px;
+			width: 1300px;
+		}
+
+		#daohanglan {
+			float: right;
+			height: 70px;
+			width: 1080px;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f8f8f8;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			width: 1300px;
+			height: 250px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.container1 {
+			width: 1300px;
+			height: 290px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		p {
+			text-align: justify;
+			color: #666;
+			line-height: 1.6;
+		}
+
+		.footer {
+			text-align: center;
+			margin-top: 30px;
+			color: #888;
+		}
+
+		.accordion {
+			margin: auto;
+			width: 1300px;
+			height: 400px;
+			/* 设置相册高度 */
+			overflow: hidden;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.accordion img {
+			width: calc(70% / 3);
+			/* 设置图片宽度 */
+			height: 70%;
+			transition: width 0.5s;
+		}
+
+		.accordion img:hover {
+			width: calc(100% / 2);
+			/* 放大图片 */
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+		function MM_swapImgRestore() { //v3.0
+			var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+		}
+		function MM_preloadImages() { //v3.0
+			var d = document; if (d.images) {
+				if (!d.MM_p) d.MM_p = new Array();
+				var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+					if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+			}
+		}
+
+		function MM_findObj(n, d) { //v4.01
+			var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+				d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+			}
+			if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+			for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+			if (!x && d.getElementById) x = d.getElementById(n); return x;
+		}
+
+		function MM_swapImage() { //v3.0
+			var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+				if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+		}
+	</script>
 </head>
 
-<body onload="MM_preloadImages('image/1-2.png','image/2-2.png','image/3-2.png','image/4-2.png','image/5-2.png','image/6-2.png')">
-<div id="top">
+<body
+	onload="MM_preloadImages('image/1-2.png','image/2-2.png','image/3-2.png','image/4-2.png','image/5-2.png','image/6-2.png')">
+	<div id="top">
 
-  
-  <div id="daohang1">  <img src="image/logo.png" width="185" height="70" /></div>
 
-  <div id="daohang2"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','image/1-2.png',1)"><img src="image/1-1.png" width="180" height="70" id="Image2" /></a><a href="1.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','image/2-2.png',1)"><img src="image/2-1.png" width="180" height="70" id="Image3" /></a><a href="2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','image/3-2.png',1)"><img src="image/3-1.png" width="180" height="70" id="Image4" /></a><a href="3.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','image/4-2.png',1)"><img src="image/4-1.png" width="180" height="70" id="Image5" /></a><a href="4.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','image/5-2.png',1)"><img src="image/5-1.png" width="180" height="70" id="Image6" /></a><a href="5.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','image/6-2.png',1)"><img src="image/6-1.png" width="179" height="70" id="Image7" /></a></div>
-</div>
-<!-- InstanceBeginEditable name="EditRegion3" -->
-<div id="main1"></div>
-<div id="main2"></div>
-<div id="down"></div>
-<!-- InstanceEndEditable -->
+		<div id="daohang1"> <img src="image/logo.png" width="185" height="70" /></div>
+
+		<div id="daohang2"><a href="index.html" onmouseout="MM_swapImgRestore()"
+				onmouseover="MM_swapImage('Image2','','image/1-2.png',1)"><img src="image/1-1.png" width="180"
+					height="70" id="Image2" /></a><a href="1.html" onmouseout="MM_swapImgRestore()"
+				onmouseover="MM_swapImage('Image3','','image/2-2.png',1)"><img src="image/2-1.png" width="180"
+					height="70" id="Image3" /></a><a href="2.html" onmouseout="MM_swapImgRestore()"
+				onmouseover="MM_swapImage('Image4','','image/3-2.png',1)"><img src="image/3-1.png" width="180"
+					height="70" id="Image4" /></a><a href="3.html" onmouseout="MM_swapImgRestore()"
+				onmouseover="MM_swapImage('Image5','','image/4-2.png',1)"><img src="image/4-1.png" width="180"
+					height="70" id="Image5" /></a><a href="4.html" onmouseout="MM_swapImgRestore()"
+				onmouseover="MM_swapImage('Image6','','image/5-2.png',1)"><img src="image/5-1.png" width="180"
+					height="70" id="Image6" /></a><a href="5.html" onmouseout="MM_swapImgRestore()"
+				onmouseover="MM_swapImage('Image7','','image/6-2.png',1)"><img src="image/6-1.png" width="179"
+					height="70" id="Image7" /></a></div>
+	</div>
+	<!-- InstanceBeginEditable name="EditRegion3" -->
+	<div id="main1"></div>
+	<div id="main2">
+
+		<div class="container">
+			<h1 style="text-align: center;">2023年11月28日中南民族大学校庆</h1>
+			<h3 style="text-align: center;">积历史之厚蕴，谱今朝之华章。</h3>
+			<p style="text-align: center;">自1951年办校兴学育才，到2023年硕果盈枝朝气蓬勃，中南民大已经走过了72年光辉岁月。</p>
+			<p style="text-align: center;">春华秋实，初心未改，弦歌不辍，继往开来。一代代民大人薪火相传，以铸牢中华民族共同体意识为主线，扎根中国大地办大学，走出了办好民族高等教育的铿锵步伐。
+			</p>
+			<h3 style="text-align: center;">让我们再向历史回眸，感受精神的洗礼。</h3>
+		</div>
+	</div>
+	<h2 style="text-align: center;">曾经的民大</h2>
+	<div id="secondAlbum" class="accordion">
+		<img src="image/xq1.jpg" alt="Photo 1">
+		<img src="image/xq2.jpg" alt="Photo 2">
+		<img src="image/xq3.jpg" alt="Photo 2">
+		<!-- Add more photos here -->
+	</div>
+	<div id="main1"></div>
+	<h2 style="text-align: center;">现在的民大</h2>
+	<div id="secondAlbum" class="accordion">
+		<img src="image/xq4.jpg" alt="Photo 1">
+		<img src="image/xq5.jpg" alt="Photo 2">
+		<img src="image/xq6.jpg" alt="Photo 2">
+		<!-- Add more photos here -->
+	</div>
+	<div class="container1">
+		<h3 style="text-align: center;">中华民族一家亲 同心共筑中国梦</h3>
+		<h3 style="text-align: center;">是时代的声音</h3>
+		<h3 style="text-align: center;">也是立志向理想之巅攀登的初心</h3>
+		<p style="text-align: center;">72岁的中南民大</p>
+		<p style="text-align: center;">青春正当时</p>
+		<p style="text-align: center;">忆往昔 岁月峥嵘</p>
+		<p style="text-align: center;">看今朝 整装待发</p>
+	</div>
+	<div id="down">
+		<iframe src="xiaoqing.html" frameborder="0" scrolling="no" width="100%" height="900"></iframe>
+		<div id="down2"></div>
+
+	</div>
+	<!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const images = document.querySelectorAll('.accordion img');
+
+		images.forEach(img => {
+			img.addEventListener('click', () => {
+				images.forEach(image => {
+					if (image !== img) {
+						image.style.width = 'calc(100% / ' + images.length + ')';
+					}
+				});
+				img.style.width = '100%';
+			});
+		});
+	});
+</script>
+
+</html>
